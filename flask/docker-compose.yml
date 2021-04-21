@@ -1,0 +1,10 @@
+version: '3.3'
+services:
+
+  service:
+    build: .
+    image: wuuconix/flask
+    ports:
+      - 8500:5000
+    environment:
+      - FLAG=flag{2333}

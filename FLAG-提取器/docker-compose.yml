@@ -1,0 +1,13 @@
+# FLAG-提取器
+version: "2"
+
+services:
+
+  web:
+    build: .
+    image: ctftraining/base_image_nginx_mysql_php_73
+    restart: always
+    ports:
+      - "0.0.0.0:8301:80"
+    environment:
+      - FLAG=flag{He7e_1s_your_Fl4g}

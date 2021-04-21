@@ -1,0 +1,13 @@
+# filter
+version: "2"
+
+services:
+
+  web:
+    build: .
+    image: wuuconix/base_image_nginx_php_55
+    restart: always
+    ports:
+      - "0.0.0.0:8307:80"
+    environment:
+      - FLAG=flag{you'4e unst0pp4ble}

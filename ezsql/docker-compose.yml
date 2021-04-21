@@ -1,0 +1,13 @@
+# ezsql
+version: "2"
+
+services:
+
+  web:
+    build: .
+    image: ctftraining/qwb_2019_supersqli
+    restart: always
+    ports:
+      - "0.0.0.0:8302:80"
+    environment:
+      - FLAG=flag{W0w_U_kn0W_sql_1njecti0n&Burp}

@@ -1,0 +1,12 @@
+# 是兄弟就来砍我
+version: "2"
+
+services:
+  web:
+    build: .
+    image: ctftraining/base_image_nginx_mysql_php_73
+    restart: always
+    ports:
+      - "0.0.0.0:8306:80"
+    environment:
+      - FLAG=flag{y@4_4re_my_6rother!}

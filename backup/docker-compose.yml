@@ -1,0 +1,12 @@
+# backup
+version: "2"
+
+services:
+  web:
+    build: .
+    image: ctftraining/base_image_nginx_mysql_php_73
+    restart: always
+    ports:
+      - "0.0.0.0:8304:80"
+    environment:
+      - FLAG=flag{i4'3_@_goodH4bit_to_Backup}
